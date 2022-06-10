@@ -169,6 +169,8 @@
 
 .works-list > li {
     width: calc((100%-60px)/3);
+
+    overflow: hidden;
 }
 
 .works-list > li:not(:last-child) {
@@ -218,6 +220,10 @@
 .team img {
     display: block;
     margin-bottom: 30px;
+}
+
+.team-card {
+    overflow: hidden;
 }
 
 /* ========== Имена сотрудников =========== */

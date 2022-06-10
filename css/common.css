@@ -23,6 +23,8 @@ body{
     font-family: 'Roboto', sans-serif;
     color: var(--main-text-color);
     background-color: #ffffff;
+
+    overflow: scroll;
   }
 
 .list {list-style: none;
@@ -39,7 +41,7 @@ h1,h2,h3,h4,h5,h6, p {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid fuchsia;
+    outline: 2px solid fuchsia;  
 }
 
 /* ===========================================Стили Хедера ==================================== */
@@ -341,7 +343,7 @@ border-radius: 50%;}
     width: 24px;
     height: 24px;
     background-image: url(../images/SVG-for-sprite/icon-send.svg);
-    background-size: contain;
+    /* background-size: contain; */
     margin-left: 10px;
 }
 /* Тест из конспекта */
