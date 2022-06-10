@@ -105,6 +105,24 @@ margin-right: 50px;
 .site-nav.current {
     color: var(--color-acent);
 }
+/* ===== Декоратвная планка в навигации шапки ==== */
+.nav-list > li {
+    display: flex;
+    flex-direction: column;
+}
+.nav-item::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-acent);
+    border-radius: 2px;
+    opacity: 0;
+}
+
+/*  ========================================    ??????????????????????????????????????????????????? */
+.current-page::after{
+    opacity: 1;
+}
 
 /* ========== Контакты в навигации ======== */
 .nav-contacts {
