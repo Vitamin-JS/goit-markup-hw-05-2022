@@ -50,7 +50,7 @@ h1,h2,h3,h4,h5,h6, p {
 .header-flex {
     display: flex;
     align-items: baseline;
-    padding-top: 24px;
+    padding-top: 6px;
 }
 
 /* ====  Flex-box навигации хедера===== */
@@ -94,7 +94,13 @@ margin-right: 50px;
     line-height: 1.1;
     color: var(--secondary-text-color);
     text-decoration: none;
-    padding-bottom: 32px;
+    padding-top: 22px;
+    padding-bottom: 28px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .site-nav:hover,
@@ -140,6 +146,10 @@ margin-right: 50px;
  line-height: 1.1;
  font-weight: 500;
  color: var(--main-text-color);
+
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-contacts a:hover,
@@ -169,6 +179,8 @@ margin-right: 50px;
 /* ===== Иконки перед контактами  Вариант через SVG  ====== */
 .nav-contacts a {
     display: flex;
+    padding-top: 22px;
+    padding-bottom: 30px;
 }
 
 
