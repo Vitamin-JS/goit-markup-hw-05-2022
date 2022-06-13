@@ -310,6 +310,11 @@ margin-bottom: 16px;
     height: 44px;
     border-radius: 50%;
     background-color: var(----main-bg-color);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .icon-svg {
@@ -318,6 +323,10 @@ margin-bottom: 16px;
     padding-right: 12px;
     padding-top: 12px;
     padding-bottom: 12px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social > li:hover .icon-svg {
@@ -328,7 +337,6 @@ margin-bottom: 16px;
 .team-social a:focus{
     background-color: var(--color-acent);
 }
-
 
 /* ==== Карточка команды- Li */
 .team-card {
@@ -384,10 +392,19 @@ margin-bottom: 16px;
     align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-clients {
     fill: var(--team-social-icons);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .clients-list > li:not(:last-child) {

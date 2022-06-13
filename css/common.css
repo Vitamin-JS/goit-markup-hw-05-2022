@@ -125,7 +125,6 @@ margin-right: 50px;
     opacity: 0;
 }
 
-/*  ========================================    ??????????????????????????????????????????????????? */
 .current-page::after{
     opacity: 1;
 }
@@ -222,14 +221,18 @@ footer {
     font-size: 14px;
     line-height: 1.7;
     color: var(--footer-grey-text);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contacts li {
     margin-bottom: 9px;
 }
 
-.footer-contacts a:hover,
-.footer-contacts a:focus {
+.foot-adress:hover,
+.foot-adress:focus {
     color: var(--main-bg-color);
 }
 
@@ -312,6 +315,10 @@ border-radius: 50%;}
     align-items: center;
     background-color: var(--footer-social-bg);
     border-radius: 50%;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-foot:not(:last-of-type) {
