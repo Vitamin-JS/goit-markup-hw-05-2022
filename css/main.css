@@ -65,6 +65,9 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 10;
+
+    opacity: 1;
+    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -72,19 +75,30 @@
     pointer-events: none;
 }
 
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.9);
+    
+}
+
+
 /* === Стили модального окна ======= */
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 
-    width: 500px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
     background: var(--main-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 15px;
+
+    transform: translate(-50%, -50%) scale(1);
+    /* transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 /* === Стили текста модалки ======= */
@@ -94,7 +108,29 @@ line-height: 1.4;
 color:darkslategrey;
 
 padding: 40px 40px 60px;
+}
 
+/* === Кнопка в модалке ========== */
+.modal-close {
+    position: absolute;
+    display: flex;
+    top: 0px;
+    right: 0px;
+    transform: translate(50%, -50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--main-bg-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.modal-close::after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/close-black.svg);
+    background-position: center;
 }
 
 /* =================== Секция Преимущесва ==============================  */
