@@ -56,7 +56,7 @@
 }
 
 /* ==================  Модальное окно     =============================== */
-/* === Стили оверлея ======= */
+/* ===== Оверлей - backdrop ======= */
 .backdrop {
     position: fixed;
     top: 0;
@@ -67,16 +67,17 @@
     z-index: 10;
 
     opacity: 1;
-    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms linear; /*по уроку Репеты */   
 }
 
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+    
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.8);   
     
 }
 
@@ -86,7 +87,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-
+    
     width: 400px;
     height: 400px;
     background: var(--main-bg-color);
@@ -95,13 +96,11 @@
     padding: 15px;
 
     transform: translate(-50%, -50%) scale(1);
-    /* transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
-
-    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: tarnsform 250ms linear, 250ms linear;
+    /*  Ok 2 свойства работают  */
 }
 
-/* === Стили текста модалки ======= */
+/* === Текст модалки ======= */
 .modal-text {
 font-size: 20px;
 line-height: 1.4;
