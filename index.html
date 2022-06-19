@@ -67,11 +67,16 @@
                 <form action="">
                     <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
                     <div class="modal-data">
-                    <input type="text" name="user-name" placeholder="Ім'я">
-                    <input type="tel" name="user-phone" placeholder="Телефон" >
-                    <input type="email" name="user-email" placeholder="Пошта">
+                    <input type="text" name="user-name" placeholder="Ім'я" autocomplete="name" autofocus>
+                    <input type="tel" name="user-phone" placeholder="Телефон" autocomplete="tel" >
+                    <input type="email" name="user-email" placeholder="Пошта" autocomplete="email">
                     <textarea name="user-comment" id="" rows="6" placeholder="Коментар"></textarea>
                     </div> 
+                    <div class="data-policy">
+                    <input type="checkbox" name="policy" id="policy">
+                    <label for="policy">Погоджуюсь з розсилкою та приймаю<a href="" class="modal-policy-link"> Умови договора</a></label>
+                    </div>
+                    <button type="submit" class="modal-btn">Відправити</button>
                     
                 </form>
                 <!-- ---  Иконка в btn не ставится через SVG--------------------- -->
@@ -427,7 +432,7 @@
             <div class="footer-action">
                 <b class="title-footer">ПІДПИШИСЯ НА РОЗСИЛКУ</b>
                 <form class="input-deco">
-                    <input type="email" value="E-mail" name="e-mail">
+                    <input type="email" value="" name="e-mail" placeholder="E-mail">
                     <button type="submit" class="footer-btn">Підписатися</button>
                     <!-- <a href="" class="footer-btn">Подписаться</a> -->
                 </form>
