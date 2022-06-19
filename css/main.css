@@ -88,26 +88,53 @@
     top: 50%;
     left: 50%;
     
-    width: 400px;
-    height: 400px;
+    /* width: 400px;
+    height: 400px; */
     background: var(--main-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding: 15px;
+    padding: 40px;
 
     transform: translate(-50%, -50%) scale(1);
     transition: tarnsform 250ms linear, 250ms linear;
-    /*  Ok 2 свойства работают  */
 }
 
-/* === Текст модалки ======= */
-.modal-text {
-font-size: 20px;
-line-height: 1.4;
-color:darkslategrey;
+/* === Форма модалки ======= */
 
-padding: 40px 40px 60px;
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    margin-bottom: 30px;
 }
+
+.modal-data {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.modal-data input,
+.modal-data textarea {
+    width: 448px;
+    height: 40px;
+    padding: 12px 42px;
+    margin-bottom: 28px;
+
+    font-size: 14px;
+    letter-spacing: 0.01em;
+
+    color: var(--main-text-color);
+}
+
+.modal-data textarea {
+    height: 120px;
+    resize: none;
+    margin-bottom: 0;
+}
+
 
 /* === Кнопка в модалке ========== */
 .modal-close {

@@ -64,12 +64,18 @@
             <!-- Модальное окно -->
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                <p class="modal-text">Форма <br> 
-                для <br>
-                заповнення
-                </p>
+                <form action="">
+                    <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+                    <div class="modal-data">
+                    <input type="text" name="user-name" placeholder="Ім'я">
+                    <input type="tel" name="user-phone" placeholder="Телефон" >
+                    <input type="email" name="user-email" placeholder="Пошта">
+                    <textarea name="user-comment" id="" rows="6" placeholder="Коментар"></textarea>
+                    </div> 
+                    
+                </form>
                 <!-- ---  Иконка в btn не ставится через SVG--------------------- -->
-                <button class="modal-close"  data-modal-close></button>
+                <button class="modal-close" data-modal-close></button>
                 </div>
             </div>
 
