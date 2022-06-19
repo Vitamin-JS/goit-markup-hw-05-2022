@@ -128,6 +128,8 @@
     letter-spacing: 0.01em;
 
     color: var(--main-text-color);
+    border: solid 1px rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
 }
 
 .modal-data textarea {
